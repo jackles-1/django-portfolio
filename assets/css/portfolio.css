@@ -1,5 +1,5 @@
 /*FIGURE OUT HOW TO MAKE SCALING AT SMALL SIZES DIFFERENT FOR:
-#bioPhoto img
+#bio-photo img
 .bodyPage p*/
 /*GET HAMBURGER WORKING*/
 /*MAKE PORTFOLTIO PAGE SCALE TO ONE COLUMN IN MOBILE*/
@@ -198,12 +198,12 @@ main.home img{
 }
 
 /*BIO PAGE*/
-#bioPhoto{
+#bio-photo{
  	width: 40%;
  	margin: 0 auto 20px auto;
 }
 
-#bioPhoto img{
+#bio-photo img{
 	width: 100%;
 	height: auto;
 }
@@ -332,7 +332,7 @@ a{
 	color: rgb(95, 113, 161);
 }
 
-#contactContent{
+#contact{
 	width: 50%;
 	margin: 40px auto;
 }

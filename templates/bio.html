@@ -1,9 +1,19 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
 {% block header %}
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway:400,700" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
-    <h1>Bio</h1>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <main>
+        <div id="bio-photo">
+            <img src="static/img/square-top-lakes.jpg"/>
+        </div>
+        <div id="biography">
+            Biography!
+        </div>
+    </main>
 {% endblock %}

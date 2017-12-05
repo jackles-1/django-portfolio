@@ -1,11 +1,16 @@
-{% extends 'layout.html' %}
+{% load static from staticfiles %}
 
-{% block header %}
+<!doctype html>
+
+<html>
+<head>
+    <title>Jackie Stonebraker</title>
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}" />
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway:400,700|Satisfy" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-{% endblock %}
+</head>
 
-{% block body %}
+<body>
 	<header class="home">
 		<h1>Jackie Stonebraker</h1>
 		<hr>
@@ -18,23 +23,19 @@
 
 	<nav class="home">
 		<div class="circle">
-			<a href="bio.html" class="bioPic">
-				<img src="assets/img/bioPic.jpg" />
+			<a href="bio" class="bioPic">
 			</a>
 		</div>
 		<div class="circle">
-			<a href="portfolio.html" class="portfolioPic">
-				<img src="assets/img/portfolioPic.jpg" />
+			<a href="portfolio" class="portfolioPic">
 			</a>
 		</div>
 		<div class="circle">
-			<a href="resume.html" class="resumePic">
-				<img src="assets/img/resumePic.jpg" />
+			<a href="resume" class="resumePic">
 			</a>
 		</div>
 		<div class="circle">
-			<a href="contact.html" class="contactPic">
-				<img src="assets/img/contactPic.jpg" />
+			<a href="contact" class="contactPic">
 			</a>
 		</div>
 	</nav>
@@ -45,12 +46,13 @@
 		<p>*Description*</p>
 
 		<a href="https://www.linkedin.com/in/jackiestonebraker">
-  			<img src="assets/img/linkedIn34px.jpg">
-			</a>
+  			<img src="static/img/linkedIn34px.jpg"/>
+		</a>
 		<a href="https://github.com/jackles-1">
-			<img src="assets/img/gitHub32px.jpg">
+			<img src="static/img/gitHub32px.jpg"/>
 		</a>
 
 		<p>NOTE: At this time, this site is optimized for Chrome and Firefox. Mobile and other browser support is in the works!</p>
 	</main>
-{% endblock %}
+</body>
+</html>

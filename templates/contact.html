@@ -1,9 +1,22 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
 {% block header %}
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway:400,700" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
-    <h1>Contact</h1>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <main id="contact">
+        <p>To contact me, please send me an email at <a href="mailto:jackie.stonebraker@gmail.com">jackie.stonebraker@gmail.com</a></p>
+        <div>
+        <a href="https://www.linkedin.com/in/jackiestonebraker">
+            <img src="static/img/linkedIn34px.jpg"/>
+        </a>
+        <a href="https://github.com/jackles-1">
+            <img src="static/img/gitHub32px.jpg"/>
+        </a>
+    </div>
+    </main>
 {% endblock %}
