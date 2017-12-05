@@ -1,0 +1,19 @@
+{% load static from staticfiles %}
+
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Jackie Stonebraker</title>
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}" />
+    {% block header %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+
+</html>

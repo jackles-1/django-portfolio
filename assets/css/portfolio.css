@@ -1,0 +1,435 @@
+/*FIGURE OUT HOW TO MAKE SCALING AT SMALL SIZES DIFFERENT FOR:
+#bioPhoto img
+.bodyPage p*/
+/*GET HAMBURGER WORKING*/
+/*MAKE PORTFOLTIO PAGE SCALE TO ONE COLUMN IN MOBILE*/
+/*FIX NAVBAR RESIZING ISSUE WITH SCROLLBAR ON CHROME*/
+/*ADD HOVER, FOCUS SHADOW TO IMAGES ON PORTFOLIO*/
+
+body{
+ 	background-color: rgb(209, 206, 213);
+ 	max-width: 100%;
+ }
+
+/*HOME PAGE*/
+header.home{
+	background:
+		linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		), url(../img/flowers.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	text-align: center;
+	padding-top: 40vh;
+	color: white;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+	font-family: Raleway;
+	font-size: 1.3em;
+	position: relative;
+	box-sizing: border-box;
+}
+
+header.home h1{
+	text-transform: uppercase;
+	margin: 0;
+	padding-bottom: 7px;
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
+hr{
+	width: 500px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+header.home p{
+	color: white;
+}
+
+
+#arrow{
+	position: absolute;
+	text-align: center;
+	bottom: 6vh;
+	font-size: 1.5em;
+}
+
+nav.home{
+	text-align: center;
+	margin: auto;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.circle{
+	margin-bottom: 5%;
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+.circle img{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	z-index: -2;
+	display: none;
+}
+
+.circle a{
+	border-radius: 100%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	font-family: Satisfy;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	line-height: 120px;
+
+	/*makes it so the a can have a height and width (a's default to inline)*/
+	display: inline-block;
+}
+
+.bioPic{
+	background-image: url(../img/bioPic.jpg);
+	background-size: contain;
+}
+
+.bioPicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(../img/bioPic.jpg);
+	background-size: contain;
+}
+
+.portfolioPic{
+	background-image: url(../img/portfolioPic.jpg);
+	background-size: contain;
+}
+
+.portfolioPicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(../img/portfolioPic.jpg);
+	background-size: contain;
+}
+
+.resumePic{
+	background-image: url(../img/resumePic.jpg);
+	background-size: contain;
+}
+
+.resumePicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(../img/resumePic.jpg);
+	background-size: contain;
+}
+
+.contactPic{
+	background-image: url(../img/contactPic.jpg);
+	background-size: contain;
+}
+
+.contactPicHover{
+	background-image: radial-gradient(circle,
+			rgba(0, 0, 0, 0.5) 60px,
+			rgb(209, 206, 213) 60px
+		), url(../img/contactPic.jpg);
+	background-size: contain;
+}
+
+main.home{
+	margin: 110px auto 30px auto;
+	text-align: center;
+}
+
+main.home p{
+	color: #333;
+	font-size: 1.3em;
+	font-family: Merriweather;
+	width: 50%;
+	margin: 0 auto 20px auto;
+}
+
+main.home img{
+	padding: 10px 5px 25px 5px;
+}
+
+/*PAGES*/
+.bodyPage p{
+	text-align: left;
+	font-size: 1.25em;
+	font-family: Merriweather;
+}
+
+.bodyPage h1{
+	font-weight: 700;
+	font-size: 3em;
+	margin: 15px 0 20px 0;
+	padding: 0 0 0 25%;
+	text-align: left;
+	font-family: Raleway;
+}
+
+.bodyPage h3{
+	font-family: Raleway;
+}
+
+.bodyPage a{
+	text-decoration: none;
+}
+
+.bodyPage a:hover, .bodyPage a:focus{
+	color: rgb(78, 85, 116);
+}
+
+/*BIO PAGE*/
+#bioPhoto{
+ 	width: 40%;
+ 	margin: 0 auto 20px auto;
+}
+
+#bioPhoto img{
+	width: 100%;
+	height: auto;
+}
+
+#biography{
+	width: 50%;
+	margin: 0 auto 20px auto;
+	font-size: 0.9em;
+}
+
+/*PORTFOLIO PAGE*/
+#portfolioContainer{
+	padding: 20px 10% 0 20%;
+}
+
+#portfolioContainer table{
+	table-layout: fixed;
+}
+
+#portfolioContainer td{
+	width: 50%;
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+.project{
+	float: left;
+}
+
+.project li{
+	margin: 3px 0;
+}
+
+.languages{
+	font-weight: 700;
+}
+
+img.projectPic{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	float: left;
+}
+
+.project h3{
+	padding-left: 221px;
+}
+
+.project ul{
+	padding-left: 240px;
+	font-family: Raleway;
+}
+
+.project h3, .project ul{
+	margin: 10px 0;
+}
+
+/*RESUME PAGE*/
+#resumeHeader{
+	margin: 15px 0 20px 0;
+}
+
+#resume{
+	width: 65%;
+	padding-left: 22%;
+	font-weight: 700;
+	font-family: Raleway;
+	line-height: 130%;
+	margin: 40px 0;
+}
+
+#resumeHeader h1{
+	display: inline;
+}
+
+img#pdfIcon{
+	float: right;
+	padding-right: 22%;
+	width: 50px;
+}
+
+#resume h2{
+	font-family: Raleway;
+}
+
+#resume h3{
+	padding-left: 20px;
+	margin-bottom: 0;
+	font-size: 130%;
+}
+
+#eduUl{
+	margin-top: 5px;
+}
+
+#resume span{
+	float: right;
+	font-weight: 700;
+}
+
+.sublist{
+	font-weight: normal;
+}
+
+.resumeCategory{
+	width: 15px;
+	vertical-align: top;
+	font-size: 150%;
+	line-height: 130%;
+	position: relative;
+}
+
+.resumeCategory:after{
+	content: "";
+	border: 2px solid rgb(124, 136, 148);
+	height: 92%;
+	top: 7px;
+	left: 100%;
+	position: absolute;
+	display: block;
+	border-radius: 4;
+}
+
+/*CONTACT PAGE*/
+a{
+	color: rgb(95, 113, 161);
+}
+
+#contactContent{
+	width: 50%;
+	margin: 40px auto;
+}
+
+/*NAVBAR*/
+
+/*allows navbar to run to ends of page*/
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+#navbar{
+	height: 18px;
+	margin: 0 auto;
+	padding: 18px 10%;
+	background-color: rgb(97, 106, 145);
+
+	/*The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position.
+	Used here to vertically center the hamburger.*/
+	position: relative;
+}
+
+#navbar ul{
+	list-style: none;
+	height: 100%;
+	margin: 0;
+}
+
+#navbar a{
+	float: left;
+	padding: 18px 15px;
+	font-family: Raleway;
+	font-size: 15px;
+	box-sizing: border-box;
+	margin-top: -18px;
+}
+
+#navbar a:hover, #navbar a:focus{
+	color: rgb(37, 41, 44);
+}
+
+#navbar a{
+	text-decoration: none;
+	color: white;
+}
+
+.currentPage a{
+	background-color: rgb(78, 85, 116);
+}
+
+button{
+/*	float: right;*/
+	height: 30px;
+	border-radius: 3px;
+	border: solid 1px rgb(209, 206, 213);
+	background-color: rgb(97, 106, 145);
+	outline: none;
+
+	/*removes browser default shadow effect*/
+	border-style: solid;
+	position: absolute;
+
+	/*Sets the position of the top edge of absolutely positioned elements.
+	Used here to center vertically.
+	"Accounts for padding and border if not using box-sizing"--including content, padding, and border
+	in width and height, rather than default of content-box--including only content*/
+	top: 50%;
+
+	/*Negative margis "pull the element in that direction."
+	Used here to center vertically (half of the height).*/
+	margin-top: -15px;
+
+	/*Sets the position of the right edge of absolutely positioned elements.*/
+	right: 18px;
+}
+
+button:hover, button:focus{
+	background-color: rgb(78, 85, 116);
+}
+
+.iconBar:first-of-type{
+	margin-top: 4px;
+}
+
+.iconBar{
+	background-color: white;
+ 	width: 20px;
+	height: 2px;
+	border-radius: 1px;
+	margin: 0 0 4px 0 ;
+
+	/*BLOCK=takes up full width available, with a new line before and after
+	default is INLINE=takes up only as much width as it needs and doesn't force new lines */
+	display: block;
+}
+
+.hidden{
+	display: none;
+}
