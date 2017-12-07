@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^bio/', views.bio),
     url(r'^contact/', views.contact),
-    url(r'^portfolio/', views.portfolio),
+    url(r'^projects/', views.projects),
     url(r'^resume/', views.resume),
     url(r'^$', views.home),
 ]

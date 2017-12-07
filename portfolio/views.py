@@ -9,8 +9,8 @@ def bio(request):
 def contact(request):
     return render(request, 'contact.html')
 
-def portfolio(request):
-    return render(request, 'portfolio.html')
+def projects(request):
+    return render(request, 'projects.html')
 
 def resume(request):
     return render(request, 'resume.html')
