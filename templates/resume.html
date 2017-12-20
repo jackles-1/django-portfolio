@@ -5,5 +5,116 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Resume</h1>
+    <header class="resume">
+        <div>
+    		<h1>Jackie Stonebraker</h1>
+    		<a target="blank" href="https://drive.google.com/file/d/0ByKFHJoJnHjPbnlSclFJZFZLbnc/view?usp=sharing">
+    			<img src="/static/img/pdfIcon.png" id="pdfIcon">
+    		</a>
+    	</div>
+    </header>
+    <main class="resume">
+    	<div>
+    		<table>
+    			<tr>
+    				<td class="resumeCategory">
+    					<h2>Education</h2>
+    				</td>
+    				<td>
+    					<table>
+    						<h3>University of Colorado</h3>
+    							<tr>
+    								<ul id="eduUl">
+    									<li>Bachelor of Arts in Chemistry with Distinction<span>May 2012</span>
+    										<ul class="sublist">
+    											<li>Overall GPA: 3.873</li>
+    										</ul>
+    									</li>
+    									<li>Computer Science Courses<span>June 2014-December 2015</span>
+    										<ul class="sublist">
+    											<li>Completed Introductory Programming, Data Structures, Discrete Mathematics, and Computer Systems courses with a GPA of 3.813.</li>
+    										</ul>
+    									</li>
+    								</ul>
+    							</tr>
+    					</table>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td class="resumeCategory">
+    					<h2>Academic Awards & Activities</h2>
+    				</td>
+    				<td>
+    					<ul>
+    						<li>ACS Division of Analytical Chemistry Undergraduate Award<span>May 2012</span></li>
+    						<li>Member of Phi Beta Kappa Honors Fraternity<span>December 2011-Present</span></li>
+    						<li>Co-President of CU Chemistry and Biochemistry Club<span>August 2010-May 2012</span></li>
+    					</ul>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td class="resumeCategory">
+    					<h2>Work Experience</h2>
+    				</td>
+    				<td>
+    					<ul>
+    						<li>Boulder County Parks and Open Space Department<span>January-June 2016</span>
+    							<ul class="sublist">
+    								<li>Administrative Technician
+    									<ul>
+    										<li>Created an audit ready organizational system to store past and present documentation relating to FEMA funding of flood repairs.</li>
+    									</ul>
+    								</li>
+    							</ul>
+    						</li>
+    						<li>Boulder County Parks and Open Space Department<span>July 2014-December 2015</span>
+    							<ul class="sublist">
+    								<li>Technology Technician
+    									<ul>
+    										<li>Developed desktop and web applications for in-house use in Python and C#.</li>
+    										<li>Wrote SQL queries and maintained database applications.</li>
+    										<li>Designed and built new database applications using Alpha Anywhere RDBMS.</li>
+    										<li>Managed data in Excel.</li>
+    									</ul>
+    								</li>
+    							</ul>
+    						</li>
+    						<li>Boulder County Parks and Open Space Department<span>October-December 2013</span>
+    							<ul class="sublist">
+    								<li>Research Assistant
+    									<ul>
+    										<li>Wrote SQL queries to support production of a new database.</li>
+    										<li>Researched past real estate transactions.</li>
+    									</ul>
+    								</li>
+    							</ul>
+    						</li>
+    						<li>Joseph Smyth Lab at the University of Colorado<span>August 2010-December 2013</span>
+    							<ul class="sublist">
+    								<li>Undergraduate Researcher
+    									<ul>
+    										<li>Prepared mineral samples and analyzed using X-ray diffraction to refine crystal structure parameters.</li>
+    									</ul>
+    								</li>
+    							</ul>
+    						</li>
+    					</ul>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td class="resumeCategory">
+    					<h2>Programming Skills</h2>
+    				</td>
+    				<td>
+    					<ul>
+    						<li>Proficient in: Python, C++, JavaScript, CSS, and HTML.</li>
+    						<li>Familiar with: SQL, C#, and C.</li>
+    					</ul>
+    				</td>
+    			</tr>
+    		</table>
+    	</div>
+    </main>
+    <div>
+
 {% endblock %}
