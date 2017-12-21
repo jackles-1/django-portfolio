@@ -1,0 +1,4 @@
+- update resume
+- fix little line under links on home page
+- fix projects link on home page
+- add projects 

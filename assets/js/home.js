@@ -10,8 +10,6 @@ window.onscroll = function(){
 	scrollPosition = document.body.scrollTop || window.pageYOffset || 0;
 	percentScrolled = scrollPosition/windowHeight;
 
-	console.log(scrollPosition);
-
 	if(percentScrolled <= 1){
 		var percentFade = 1-percentScrolled;
 		arrow.style.opacity = percentFade;
@@ -31,10 +29,10 @@ for(var i=0; i < pageIcons.length; i++){
 			this.classList.remove("bioPic");
 			this.textContent = "Bio";
 		}
-		else if(this.classList.contains("portfolioPic")){
-			this.classList.add("portfolioPicHover");
-			this.classList.remove("portfolioPic");
-			this.textContent = "Portfolio";
+		else if(this.classList.contains("projectsPic")){
+			this.classList.add("projectsPicHover");
+			this.classList.remove("projectsPic");
+			this.textContent = "Projects";
 		}
 		else if(this.classList.contains("resumePic")){
 			this.classList.add("resumePicHover");
@@ -53,9 +51,9 @@ for(var i=0; i < pageIcons.length; i++){
 			this.classList.remove("bioPicHover");
 			this.textContent = "";
 		}
-		else if(this.classList.contains("portfolioPicHover")){
-			this.classList.add("portfolioPic");
-			this.classList.remove("portfolioPicHover");
+		else if(this.classList.contains("projectsPicHover")){
+			this.classList.add("projectsPic");
+			this.classList.remove("projectsPicHover");
 			this.textContent = "";
 		}
 		else if(this.classList.contains("resumePicHover")){
