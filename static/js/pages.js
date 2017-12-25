@@ -5,8 +5,8 @@ switch(page){
     case "/bio/":
     $("li:has(a[href$='bio'])").addClass("currentPage");
     break;
-    case "/projects/":
-    $("li:has(a[href$='projects'])").addClass("currentPage");
+    case "/portfolio/":
+    $("li:has(a[href$='portfolio'])").addClass("currentPage");
     break;
     case "/resume/":
     $("li:has(a[href$='resume'])").addClass("currentPage");

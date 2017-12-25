@@ -29,10 +29,10 @@ for(var i=0; i < pageIcons.length; i++){
 			this.classList.remove("bioPic");
 			this.textContent = "Bio";
 		}
-		else if(this.classList.contains("projectsPic")){
-			this.classList.add("projectsPicHover");
-			this.classList.remove("projectsPic");
-			this.textContent = "Projects";
+		else if(this.classList.contains("portfolioPic")){
+			this.classList.add("portfolioPicHover");
+			this.classList.remove("portfolioPic");
+			this.textContent = "Portfolio";
 		}
 		else if(this.classList.contains("resumePic")){
 			this.classList.add("resumePicHover");
@@ -51,9 +51,9 @@ for(var i=0; i < pageIcons.length; i++){
 			this.classList.remove("bioPicHover");
 			this.textContent = "";
 		}
-		else if(this.classList.contains("projectsPicHover")){
-			this.classList.add("projectsPic");
-			this.classList.remove("projectsPicHover");
+		else if(this.classList.contains("portfolioPicHover")){
+			this.classList.add("portfolioPic");
+			this.classList.remove("portfolioPicHover");
 			this.textContent = "";
 		}
 		else if(this.classList.contains("resumePicHover")){

@@ -113,16 +113,16 @@ nav.home{
 	background-size: contain;
 }
 
-.projectsPic{
-	background-image: url(../img/projectsPic.jpg);
+.portfolioPic{
+	background-image: url(../img/portfolioPic.jpg);
 	background-size: contain;
 }
 
-.projectsPicHover{
+.portfolioPicHover{
 	background-image: radial-gradient(circle,
 			rgba(0, 0, 0, 0.5) 60px,
 			rgb(209, 206, 213) 60px
-		), url(../img/projectsPic.jpg);
+		), url(../img/portfolioPic.jpg);
 	background-size: contain;
 }
 
