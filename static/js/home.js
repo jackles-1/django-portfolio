@@ -1,4 +1,4 @@
-// Fade Out Arrow Upon Scrolling Down
+// Fade out arrow upon scrolling down
 var windowHeight = (window.innerHeight)/3
 var scrollPosition;
 var percentScrolled;
@@ -19,7 +19,7 @@ window.onscroll = function(){
 	}
 };
 
-// Add Gradient and Text Over Page Icons On Hover and Focus
+// Add gradient and text over page icons on hover and focus
 var pageIcons = document.querySelectorAll(".circle a");
 
 for(var i=0; i < pageIcons.length; i++){
