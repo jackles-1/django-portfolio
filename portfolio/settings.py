@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '10yelfy5@_3#etgy@2ug*a&+o(s_dbm!i1saj%0l)^p*8ly+yj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['jackiestonebraker.com', '127.0.0.1']
 
