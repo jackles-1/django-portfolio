@@ -14,6 +14,8 @@ handlers:
 libraries:
 - name: django
   version: "1.11"
+#- name: ssl
+#  version: latest
 # - url: /(.*\.(gif|png|jpg))$
 #   static_files: assets/\1
 #   upload: assets/.*\.(gif|png|jpg)$

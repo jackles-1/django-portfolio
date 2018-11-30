@@ -1,14 +1,19 @@
 // Fade out arrow upon scrolling down
-var windowHeight = (window.innerHeight)/3
+// height of window (what is visible at one time)
+var windowHeight = (window.innerHeight);
+// height of the entire page
+var documentHeight = document.body.scrollHeight;
+var heightDifference = documentHeight - windowHeight;
 var scrollPosition;
 var percentScrolled;
 var arrow = document.querySelector("#arrow");
 var body = document.querySelector("body");
 
 window.onscroll = function(){
+	// number of pixels scrolled vertically
 	// Chrome || Firefox
 	scrollPosition = document.body.scrollTop || window.pageYOffset || 0;
-	percentScrolled = scrollPosition/windowHeight;
+	percentScrolled = scrollPosition/heightDifference;
 
 	if(percentScrolled <= 1){
 		var percentFade = 1-percentScrolled;
@@ -27,7 +32,7 @@ for(var i=0; i < pageIcons.length; i++){
 		if(this.classList.contains("bioPic")){
 			this.classList.add("bioPicHover");
 			this.classList.remove("bioPic");
-			this.textContent = "Bio";
+			this.textContent = "About Me";
 		}
 		else if(this.classList.contains("portfolioPic")){
 			this.classList.add("portfolioPicHover");

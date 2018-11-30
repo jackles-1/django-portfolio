@@ -7,7 +7,7 @@
 /*ADD HOVER, FOCUS SHADOW TO IMAGES ON PORTFOLIO*/
 
 body{
- 	background-color: rgb(209, 206, 213);
+ 	/* background-color: rgb(209, 206, 213); */
  	max-width: 100%;
  }
 
@@ -188,11 +188,11 @@ main.home img{
 	margin: 15px 0 20px 0;
 	padding: 0 0 0 25%;
 	text-align: left;
-	font-family: Raleway;
+	font-family: Roboto;
 }
 
 .bodyPage h3{
-	font-family: Raleway;
+	font-family: Roboto;
 }
 
 .bodyPage a{
@@ -260,7 +260,7 @@ img.projectPic{
 
 .project ul{
 	padding-left: 240px;
-	font-family: Raleway;
+	font-family: Roboto;
 }
 
 .project h3, .project ul{
@@ -280,7 +280,7 @@ main.resume{
 	width: 65%;
 	padding-left: 22%;
 	font-weight: 700;
-	font-family: Raleway;
+	font-family: Roboto;
 	line-height: 130%;
 }
 
@@ -291,7 +291,7 @@ img#pdfIcon{
 }
 
 main.resume h2{
-	font-family: Raleway;
+	font-family: Roboto;
 }
 
 main.resume h3{
@@ -355,6 +355,7 @@ html, body{
 	margin: 0 auto;
 	padding: 18px 10%;
 	background-color: rgb(97, 106, 145);
+  /* background-color: rgb(213, 255, 128); */
 
 	/*The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position.
 	Used here to vertically center the hamburger.*/
@@ -370,7 +371,7 @@ html, body{
 #navbar a{
 	float: left;
 	padding: 18px 15px;
-	font-family: Raleway;
+	font-family: Roboto;
 	font-size: 15px;
 	box-sizing: border-box;
 	margin-top: -18px;
